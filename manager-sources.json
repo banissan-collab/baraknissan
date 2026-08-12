@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Rockrose",
+    "areas": "Manhattan · Long Island City",
+    "inventoryUrl": "https://rockrose.com/availabilities",
+    "status": "op-visible",
+    "statusLabel": "OP shown on select units",
+    "note": "Public availability page currently shows active units and identifies OP incentives on select apartments. Republish permission still needs to be confirmed before units are copied to this website."
+  },
+  {
+    "name": "Parker Towers / Beam Living",
+    "areas": "Forest Hills · Queens",
+    "inventoryUrl": "https://www.parkertowers.com/brokers",
+    "status": "conditional",
+    "statusLabel": "Broker program · permission required",
+    "note": "Parker Towers has a documented outside-broker process. Corporate-website advertising is permitted only when Management's conditions and consent requirements are satisfied."
+  },
+  {
+    "name": "TF Cornerstone",
+    "areas": "Manhattan · Brooklyn · Long Island City",
+    "inventoryUrl": "https://broker.tfc.com/broker/listings",
+    "status": "conditional",
+    "statusLabel": "Broker portal · OP on select units",
+    "note": "TFC maintains a broker inventory page and shows OP incentives on select units. Their current materials require written consent before listings or materials are re-advertised elsewhere."
+  },
+  {
+    "name": "Dermot",
+    "areas": "Manhattan · Brooklyn · Queens",
+    "inventoryUrl": "https://www.dermotcompany.com/state/new-york",
+    "status": "research",
+    "statusLabel": "Active inventory · terms to confirm",
+    "note": "Dermot publishes current New York rental communities and apartment search inventory. Outside-broker advertising and OP terms need to be confirmed before automatic syndication."
+  },
+  {
+    "name": "Gotham Properties",
+    "areas": "Manhattan · Brooklyn · Long Island City",
+    "inventoryUrl": "https://www.gothamproperties.com/buildings/",
+    "status": "research",
+    "statusLabel": "Active inventory · terms to confirm",
+    "note": "Gotham publishes current luxury rental properties and available units. Broker compensation and website advertising permission need to be confirmed before syndication."
+  },
+  {
+    "name": "Beam Living",
+    "areas": "StuyTown · Kips Bay · Forest Hills · FiDi",
+    "inventoryUrl": "https://www.beamliving.com/",
+    "status": "research",
+    "statusLabel": "Multiple NYC communities",
+    "note": "Beam manages several large NYC rental communities. Broker rules vary by property, so inventory will only be added after each building's advertising and compensation terms are verified."
+  }
+]
