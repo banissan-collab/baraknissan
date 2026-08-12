@@ -1004,41 +1004,7 @@
 
     <!-- GRID VIEW: 3-column card layout -->
     <div class="listings-grid-view" id="gridView">
-      <!-- Card 1: Staten Island -->
-      <div class="listing-card-compact" onclick="showDetailView(0)">
-        <div class="card-image">
-          <img src="staten-island-images/1000034318.jpg" alt="Staten Island 1BR — kitchen" />
-          <span class="card-badge">AVAILABLE JUN 1</span>
-        </div>
-        <div class="card-info">
-          <div class="card-price">$1,500<span>/month</span></div>
-          <div class="card-title">Renovated 1-Bedroom — Private Side Unit</div>
-          <div class="card-address">57 Villanova St, Staten Island, NY 10314</div>
-          <div class="card-specs">
-            <span>1 Bed</span>
-            <span>1 Bath</span>
-            <span>Available Jun 1</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2: The Max -->
-      <div class="listing-card-compact" onclick="showDetailView(1)">
-        <div class="card-image">
-          <img src="the-max-images/the-max-01.png" alt="The Max" />
-          <span class="card-badge">NOW LEASING</span>
-        </div>
-        <div class="card-info">
-          <div class="card-price">$3,500<span>/month and up</span></div>
-          <div class="card-title">The Max — Elevated Waterfront Living</div>
-          <div class="card-address">606 West 57th Street, New York, NY</div>
-          <div class="card-specs">
-            <span>44 Stories</span>
-            <span>45K+ Sq Ft Amenities</span>
-            <span>Now Available</span>
-          </div>
-        </div>
-      </div>
+      <!-- Listing cards are populated automatically from rentals.json -->
     </div>
 
     <!-- DETAIL VIEW: Full property information -->
@@ -1745,5 +1711,6 @@
   }
 </script>
 
+  <script src="rentals-loader.js"></script>
 </body>
 </html>
