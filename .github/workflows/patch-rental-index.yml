@@ -1,0 +1,35 @@
+name: Patch rental listings index
+
+on:
+  push:
+    branches:
+      - rental-system
+    paths:
+      - '.github/workflows/patch-rental-index.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: rental-system
+
+      - name: Patch index.html
+        run: python scripts/patch_index.py
+
+      - name: Commit index.html
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No index changes needed"
+          else
+            git commit -m "Load featured rentals from rentals.json"
+            git push origin rental-system
+          fi
