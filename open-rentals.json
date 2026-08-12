@@ -6,5 +6,10 @@
   {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midwest Court","address":"410 W 53rd Street","unit":"412","price":4670,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
   {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Lyra","address":"555 W 38th St","unit":"804","price":5097,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
   {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"4709","price":3699,"beds":"Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"PH03","price":5575,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"}
+  {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"PH03","price":5575,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midtown West Residence","address":"345 W 53rd St","unit":"B","price":3495,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"2100 2nd Ave","unit":"29","price":3995,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"East Village","building":"East Village Residence","address":"42 Avenue B","unit":"5","price":4395,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Nolita Residence","address":"250 Mott St","unit":"13","price":5495,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Mulberry Street Residence","address":"115 Mulberry St","unit":"2F","price":8295,"beds":"4 Bedroom","baths":"2 Bath","verified":"2026-08-12"}
 ]
