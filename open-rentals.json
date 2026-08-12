@@ -1,19 +1,14 @@
 [
-  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midwest Court","address":"410 W 53rd Street","unit":"327","price":3750,"beds":"Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midwest Court","address":"410 W 53rd Street","unit":"221","price":4250,"beds":"Alcove Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Lyra","address":"555 W 38th St","unit":"2807","price":4250,"beds":"Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Lyra","address":"555 W 38th St","unit":"1506","price":4482,"beds":"Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midwest Court","address":"410 W 53rd Street","unit":"412","price":4670,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Lyra","address":"555 W 38th St","unit":"804","price":5097,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"4709","price":3699,"beds":"Studio","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"PH03","price":5575,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Midtown West Residence","address":"345 W 53rd St","unit":"B","price":3495,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Luxury West Side Residence","address":"445 W 35th Street","unit":"8A","price":7675,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12","luxury":true},
+  {"borough":"Manhattan","neighborhood":"Hudson Yards / Midtown West","building":"Luxury West Side Residence","address":"445 W 35th Street","unit":"9M","price":9180,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12","luxury":true},
+  {"borough":"Manhattan","neighborhood":"Midtown West","building":"Luxury Midtown West Residence","address":"400 W 59th Street","unit":"private","price":7500,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12","luxury":true},
+  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Luxury Upper East Side Residence","address":"215 E 68th Street","unit":"private","price":7700,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12","luxury":true},
   {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"2100 2nd Ave","unit":"29","price":3995,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Luxury Upper West Side Residence","address":"250 W 91st Street","unit":"private","price":6900,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12","luxury":true},
+  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Upper West Side Residence","address":"15 W 103rd St","unit":"1C","price":5295,"beds":"2 Bedroom","baths":"1.5 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"East Village","building":"Luxury East Village Residence","address":"23 Avenue B","unit":"private","price":7100,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12","luxury":true},
+  {"borough":"Manhattan","neighborhood":"East Village","building":"Luxury East Village Residence","address":"21 Avenue B","unit":"private","price":6900,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12","luxury":true},
   {"borough":"Manhattan","neighborhood":"East Village","building":"East Village Residence","address":"42 Avenue B","unit":"5","price":4395,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
   {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Nolita Residence","address":"250 Mott St","unit":"13","price":5495,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Mulberry Street Residence","address":"115 Mulberry St","unit":"2F","price":8295,"beds":"4 Bedroom","baths":"2 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Upper West Side Residence","address":"15 W 103rd St","unit":"1C","price":5295,"beds":"2 Bedroom","baths":"1.5 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Upper West Side Residence","address":"3 W 103rd St","unit":"3RW","price":4495,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"314 E 106th St","unit":"1","price":3195,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"212 E 105th St","unit":"21","price":3495,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"}
+  {"borough":"Brooklyn","neighborhood":"Fort Greene","building":"The Everly","address":"180 Ashland Place","unit":"PH03","price":5575,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"}
 ]
