@@ -11,5 +11,9 @@
   {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"2100 2nd Ave","unit":"29","price":3995,"beds":"2 Bedroom","baths":"2 Bath","verified":"2026-08-12"},
   {"borough":"Manhattan","neighborhood":"East Village","building":"East Village Residence","address":"42 Avenue B","unit":"5","price":4395,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
   {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Nolita Residence","address":"250 Mott St","unit":"13","price":5495,"beds":"1 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
-  {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Mulberry Street Residence","address":"115 Mulberry St","unit":"2F","price":8295,"beds":"4 Bedroom","baths":"2 Bath","verified":"2026-08-12"}
+  {"borough":"Manhattan","neighborhood":"SoHo / Nolita","building":"Mulberry Street Residence","address":"115 Mulberry St","unit":"2F","price":8295,"beds":"4 Bedroom","baths":"2 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Upper West Side Residence","address":"15 W 103rd St","unit":"1C","price":5295,"beds":"2 Bedroom","baths":"1.5 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper West Side","building":"Upper West Side Residence","address":"3 W 103rd St","unit":"3RW","price":4495,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"314 E 106th St","unit":"1","price":3195,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"},
+  {"borough":"Manhattan","neighborhood":"Upper East Side","building":"Upper East Side Residence","address":"212 E 105th St","unit":"21","price":3495,"beds":"2 Bedroom","baths":"1 Bath","verified":"2026-08-12"}
 ]
