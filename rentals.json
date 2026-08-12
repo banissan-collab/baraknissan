@@ -1,0 +1,32 @@
+[
+  {
+    "id": "staten-island-villanova",
+    "active": true,
+    "title": "Renovated 1-Bedroom — Private Side Unit",
+    "address": "57 Villanova St, Staten Island, NY 10314",
+    "neighborhood": "Staten Island",
+    "price": 1500,
+    "priceSuffix": "/month",
+    "beds": "1 Bed",
+    "baths": "1 Bath",
+    "availability": "Available Jun 1",
+    "badge": "AVAILABLE JUN 1",
+    "image": "staten-island-images/1000034318.jpg",
+    "propertyIndex": 0
+  },
+  {
+    "id": "the-max",
+    "active": true,
+    "title": "The Max — Elevated Waterfront Living",
+    "address": "606 West 57th Street, New York, NY",
+    "neighborhood": "Midtown West",
+    "price": 3500,
+    "priceSuffix": "/month and up",
+    "beds": "44 Stories",
+    "baths": "45K+ Sq Ft Amenities",
+    "availability": "Now Available",
+    "badge": "NOW LEASING",
+    "image": "the-max-images/the-max-01.png",
+    "propertyIndex": 1
+  }
+]
