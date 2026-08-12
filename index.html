@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Barak Nissan — Licensed Real Estate Salesperson, NY</title>
+<meta name="description" content="Barak Nissan — Licensed NY Real Estate Salesperson with FIND Real Estate. 15+ years of executive leadership applied to NYC rentals, sales, and investment properties. Call 718-288-3520." />
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#0F1E2E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1E2E;
+    --navy-2:#152A3F;
+    --ink:#1A1A1A;
+    --muted:#5A6573;
+    --line:#E6E4DD;
+    --bg:#FAFAF7;
+    --card:#FFFFFF;
+    --gold:#B8924A;
+    --gold-2:#9E7C3A;
+    --success:#1F7A4D;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:-0.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* ===== NAV ===== */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,250,247,0.85);
+    backdrop-filter:saturate(180%) blur(12px);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1180px;margin:0 auto}
+  .logo{font-family:'Fraunces',serif;font-size:22px;font-weight:600;letter-spacing:-0.02em;color:var(--navy)}
+  .logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{font-size:14.5px;color:var(--muted);font-weight:500;transition:color .2s}
+  .nav-links a:hover{color:var(--navy)}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--gold);color:#fff;padding:12px 22px;border-radius:999px;
+    font-size:15px;font-weight:700;letter-spacing:0.01em;
+    transition:all .25s;box-shadow:0 4px 14px rgba(184,146,74,0.35);
+  }
+  .nav-cta:hover{background:var(--navy);color:#fff;transform:translateY(-1px);box-shadow:0 6px 18px rgba(15,30,46,0.35)}
+  .nav-cta svg{width:15px;height:15px}
+  .menu-btn{
+    display:none;background:none;border:none;cursor:pointer;
+    font-size:24px;color:var(--navy);
+    width:44px;height:44px;border-radius:8px;
+    align-items:center;justify-content:center;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .menu-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  @media (max-width:820px){
+    .nav-links{display:none}
+    .menu-btn{display:inline-flex}
+    .nav-links.open{
+      display:flex;position:absolute;top:100%;left:0;right:0;
+      flex-direction:column;background:var(--bg);padding:20px;gap:18px;
+      border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+    .nav-links.open a{padding:6px 4px;font-size:16px}
+    .nav-links.open .nav-cta{padding:14px 22px;justify-content:center}
+  }
+
+  /* ===== HERO ===== */
+  .hero{padding:80px 0 70px;position:relative;overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;
+    background:radial-gradient(closest-side,rgba(184,146,74,0.10),transparent 70%);pointer-events:none;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--gold-2);font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+  h1{font-size:clamp(40px,5.5vw,64px);color:var(--navy);margin-bottom:22px}
+  .hero p.lead{font-size:18px;color:var(--muted);max-width:520px;margin-bottom:32px}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;
+    transition:all .25s;cursor:pointer;border:none;font-family:inherit;
+  }
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-primary:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 12px 24px rgba(184,146,74,.25)}
+  .btn-secondary{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
+  .btn-secondary:hover{background:var(--navy);color:#fff}
+  .btn svg{width:18px;height:18px}
+
+  .trust-row{display:flex;gap:32px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line)}
+  .trust-item{display:flex;flex-direction:column;gap:2px}
+  .trust-item .num{font-family:'Fraunces',serif;font-size:26px;color:var(--navy);font-weight:600}
+  .trust-item .lbl{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em}
+
+  .hero-photo{position:relative}
+  .hero-photo .frame{
+    position:relative;border-radius:16px;overflow:hidden;
+    box-shadow:0 30px 60px -20px rgba(15,30,46,0.35);
+    background:linear-gradient(135deg,#1F3A52,#0F1E2E);
+    aspect-ratio:5/6;
+  }
+  .hero-photo .frame img{width:100%;height:100%;object-fit:cover}
+  .hero-photo .placeholder{
+    width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-family:'Fraunces',serif;font-size:120px;font-weight:500;letter-spacing:-0.04em;
+    background:linear-gradient(135deg,#1F3A52,#0F1E2E);
+  }
+  .badge{
+    position:absolute;bottom:-18px;left:-18px;background:#fff;
+    padding:14px 18px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);
+    display:flex;align-items:center;gap:14px;border:1px solid var(--line);
+  }
+  .badge .badge-icon{
+    width:40px;height:40px;border-radius:10px;flex-shrink:0;
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));
+    display:flex;align-items:center;justify-content:center;color:var(--gold);
+  }
+  .badge .badge-icon svg{width:20px;height:20px}
+  .badge .badge-text{font-size:12px;line-height:1.4;color:var(--muted)}
+  .badge strong{display:block;font-size:14px;color:var(--navy);font-family:'Fraunces',serif;font-weight:600;margin-bottom:1px}
+
+  @media (max-width:820px){
+    .hero{padding:48px 0 40px}
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .hero-photo{max-width:420px;margin:0 auto}
+    .trust-row{gap:24px}
+  }
+  @media (max-width:640px){
+    .hero{padding:36px 0 30px}
+    .container{padding:0 18px}
+    .hero p.lead{font-size:16px}
+    .cta-row{flex-direction:column;width:100%}
+    .cta-row .btn{width:100%;justify-content:center}
+    .trust-row{gap:18px;justify-content:space-between}
+    .trust-item .num{font-size:22px}
+    .trust-item .lbl{font-size:11px}
+    .badge{left:12px;bottom:-14px;padding:12px 14px}
+    .badge .badge-icon{width:34px;height:34px}
+    .badge strong{font-size:13px}
+    .badge .badge-text{font-size:11.5px}
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  section{padding:90px 0}
+  @media (max-width:640px){
+    section{padding:56px 0}
+    .section-head{margin-bottom:36px}
+    .section-head p{font-size:15px}
+  }
+  .section-head{text-align:center;max-width:720px;margin:0 auto 56px}
+  .section-head .eyebrow{margin-bottom:14px}
+  .section-head h2{font-size:clamp(32px,4vw,46px);color:var(--navy);margin-bottom:14px}
+  .section-head p{color:var(--muted);font-size:17px}
+
+  /* ===== SERVICES ===== */
+  .services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .service{
+    padding:36px 28px;border:1px solid var(--line);border-radius:14px;
+    transition:all .3s;background:var(--bg);
+  }
+  .service:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(15,30,46,0.15)}
+  .service .icon{
+    width:48px;height:48px;border-radius:12px;
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));
+    display:flex;align-items:center;justify-content:center;color:var(--gold);
+    margin-bottom:22px;
+  }
+  .service .icon svg{width:22px;height:22px}
+  .service h3{font-size:21px;color:var(--navy);margin-bottom:10px}
+  .service .service-tagline{
+    font-family:'Fraunces',serif;font-style:italic;color:var(--gold-2);
+    font-size:14px;line-height:1.45;margin-bottom:12px;font-weight:500;
+  }
+  .service p{color:var(--muted);font-size:15px}
+  @media (max-width:820px){.service-grid{grid-template-columns:1fr}}
+
+  /* ===== ABOUT ===== */
+  .about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start}
+  .about-card{
+    background:var(--navy);color:#fff;border-radius:16px;padding:38px;
+    position:sticky;top:100px;
+  }
+  .about-card h3{font-size:24px;margin-bottom:8px;color:#fff}
+  .about-card .role{color:var(--gold);font-size:14px;font-weight:500;margin-bottom:24px;letter-spacing:0.04em}
+  .about-card dl{display:grid;grid-template-columns:auto 1fr;gap:14px 18px;font-size:14px}
+  .about-card dt{color:rgba(255,255,255,0.55);font-weight:500}
+  .about-card dd{color:#fff}
+  .about-card .divider{height:1px;background:rgba(255,255,255,0.12);margin:24px 0}
+  .about-card a{color:var(--gold);font-weight:500}
+  .about-body p{font-size:17px;color:var(--ink);margin-bottom:20px;line-height:1.75}
+  .about-body p:first-child::first-letter{
+    font-family:'Fraunces',serif;font-size:64px;float:left;line-height:0.9;
+    color:var(--gold);margin:6px 12px 0 0;font-weight:500;
+  }
+  @media (max-width:820px){
+    .about-grid{grid-template-columns:1fr;gap:32px}
+    .about-card{position:static}
+  }
+
+  /* ===== LISTINGS ===== */
+  .listings{background:#fff;border-top:1px solid var(--line)}
+  .listings-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-bottom:0;
+  }
+  .listing-card{
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;
+    box-shadow:0 30px 60px -30px rgba(15,30,46,0.18);
+  }
+  /* Give info side equal weight so copy isn't cramped.
+     minmax(0,1fr) is critical: without the 0 min, the image inside .gallery
+     prevents the column from shrinking, blowing the card past its container. */
+  .listing-top{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:0;align-items:stretch;
+  }
+  .gallery{
+    position:relative;background:#0F1E2E;display:flex;flex-direction:column;
+    min-width:0;overflow:hidden;
+  }
+  .gallery-main{
+    position:relative;width:100%;flex:1;min-height:520px;overflow:hidden;
+    background:#0F1E2E;
+  }
+  .gallery-main img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transition:opacity .4s ease;
+  }
+  .gallery-main img.active{opacity:1}
+  .gallery-nav{
+    position:absolute;top:50%;transform:translateY(-50%);
+    width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.95);
+    border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    color:var(--navy);font-size:20px;font-weight:700;line-height:1;
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);transition:all .2s;z-index:2;
+  }
+  .gallery-nav:hover{background:var(--gold);color:#fff}
+  .gallery-nav.prev{left:16px}
+  .gallery-nav.next{right:16px}
+  .gallery-counter{
+    position:absolute;bottom:16px;left:16px;background:rgba(15,30,46,0.82);
+    color:#fff;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:600;
+    letter-spacing:0.05em;z-index:2;
+  }
+  .gallery-status{
+    position:absolute;top:16px;left:16px;background:var(--gold);color:#fff;
+    padding:7px 14px;border-radius:999px;font-size:11px;font-weight:700;
+    text-transform:uppercase;letter-spacing:0.08em;z-index:2;
+  }
+  .thumbs{
+    display:flex;gap:8px;padding:14px;background:#0A1622;overflow-x:auto;
+    scrollbar-width:thin;scrollbar-color:var(--gold) transparent;
+    -webkit-overflow-scrolling:touch;
+  }
+  .thumbs::-webkit-scrollbar{height:6px}
+  .thumbs::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+  .thumb{
+    flex:0 0 80px;height:60px;border-radius:6px;overflow:hidden;cursor:pointer;
+    border:2px solid transparent;opacity:0.6;transition:all .2s;
+  }
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb:hover{opacity:1}
+  .thumb.active{opacity:1;border-color:var(--gold)}
+
+  .listing-info{
+    padding:44px;display:flex;flex-direction:column;
+    min-width:0;
+  }
+  .listing-info .price-row{
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+    padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:22px;
+  }
+  .listing-info .price{font-family:'Fraunces',serif;font-size:44px;color:var(--navy);font-weight:600;line-height:1}
+  .listing-info .price-period{color:var(--muted);font-size:15px}
+  .listing-info .second-price{color:var(--muted);font-size:14px;margin-bottom:22px;line-height:1.5}
+  .listing-info h3{font-size:26px;color:var(--navy);margin-bottom:8px;line-height:1.25}
+  .listing-info .neighborhood{
+    color:var(--muted);font-size:14.5px;margin-bottom:26px;
+    display:flex;align-items:center;gap:8px;line-height:1.4;
+  }
+  .listing-info a.map-link{
+    text-decoration:none;color:var(--muted);
+    transition:color .2s;
+  }
+  .listing-info a.map-link:hover{color:var(--gold-2)}
+  .listing-info a.map-link span{
+    border-bottom:1px solid var(--line);transition:border-color .2s;
+  }
+  .listing-info a.map-link:hover span{border-color:var(--gold)}
+  .listing-info a.map-link .ext{opacity:0.6;margin-left:2px;transition:opacity .2s}
+  .listing-info a.map-link:hover .ext{opacity:1}
+  .listing-info .specs-row{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px;
+  }
+  .spec-box{
+    background:var(--bg);padding:16px 12px;border-radius:10px;text-align:center;
+    border:1px solid var(--line);
+  }
+  .spec-box .v{font-family:'Fraunces',serif;font-size:22px;color:var(--navy);font-weight:600;line-height:1}
+  .spec-box .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:5px}
+  .listing-info .desc{color:var(--ink);font-size:15.5px;line-height:1.75;margin-bottom:26px}
+  .listing-cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .listing-cta-row .btn{flex:1;justify-content:center;min-width:140px}
+
+  .listing-detail{padding:40px 44px 44px;border-top:1px solid var(--line);background:var(--bg)}
+  .detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+  .detail-col h4{
+    font-family:'Inter',sans-serif;font-size:12px;text-transform:uppercase;
+    letter-spacing:0.1em;color:var(--gold-2);margin-bottom:16px;font-weight:700;
+  }
+  .detail-col ul{list-style:none;padding:0}
+  .detail-col li{
+    font-size:14.5px;color:var(--ink);padding:8px 0;display:flex;gap:10px;
+    align-items:flex-start;line-height:1.55;
+  }
+  .detail-col li::before{
+    content:"";flex-shrink:0;width:5px;height:5px;border-radius:50%;
+    background:var(--gold);margin-top:10px;
+  }
+
+  /* Tablet: listings stack to 1 column, listing top stacks */
+  @media (max-width:1024px){
+    .listings-grid{grid-template-columns:1fr;gap:24px}
+    .listing-top{grid-template-columns:1fr}
+    .gallery-main{min-height:440px}
+    .listing-info{padding:36px 32px}
+    .listing-detail{padding:32px}
+    .detail-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  }
+
+  /* Mobile: tighten everything so it stays readable */
+  @media (max-width:640px){
+    .listing-card{border-radius:14px}
+    .gallery-main{min-height:280px}
+    .gallery-nav{width:38px;height:38px;font-size:18px}
+    .gallery-nav.prev{left:10px}
+    .gallery-nav.next{right:10px}
+    .gallery-status,.gallery-counter{font-size:10.5px;padding:5px 10px}
+    .gallery-status{top:10px;left:10px}
+    .gallery-counter{bottom:10px;left:10px}
+    .thumbs{padding:10px;gap:6px}
+    .thumb{flex:0 0 64px;height:48px}
+
+    .listing-info{padding:28px 22px}
+    .listing-info .price{font-size:34px}
+    .listing-info .price-row{padding-bottom:16px;margin-bottom:18px}
+    .listing-info .second-price{font-size:13.5px;margin-bottom:18px}
+    .listing-info h3{font-size:20px}
+    .listing-info .neighborhood{font-size:13.5px;margin-bottom:20px}
+    .listing-info .specs-row{gap:8px;margin-bottom:20px}
+    .spec-box{padding:12px 6px}
+    .spec-box .v{font-size:17px}
+    .spec-box .l{font-size:10px;letter-spacing:0.04em}
+    .listing-info .desc{font-size:14.5px;line-height:1.7;margin-bottom:22px}
+    .listing-cta-row{flex-direction:column;gap:8px}
+    .listing-cta-row .btn{width:100%;padding:14px 20px;font-size:14.5px}
+
+    .listing-detail{padding:26px 22px 28px}
+    .detail-grid{grid-template-columns:1fr;gap:22px}
+    .detail-col h4{font-size:11.5px;margin-bottom:12px}
+    .detail-col li{font-size:14px;padding:6px 0}
+  }
+
+  /* ===== SKYLINE BANNER ===== */
+  .skyline-banner{
+    position:relative;height:340px;overflow:hidden;
+    background:#0F1E2E;
+  }
+  .skyline-banner img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0.85;
+  }
+  .skyline-banner::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(15,30,46,0.35) 0%,rgba(15,30,46,0.85) 100%);
+  }
+  .skyline-banner .skyline-text{
+    position:relative;z-index:1;display:flex;flex-direction:column;
+    justify-content:flex-end;height:100%;padding:48px 0;color:#fff;
+    text-align:center;
+  }
+  .skyline-banner .skyline-text .eyebrow{justify-content:center;color:var(--gold);display:inline-flex;margin:0 auto 14px;}
+  .skyline-banner .skyline-text h2{
+    font-size:clamp(28px,3.6vw,40px);color:#fff;margin:0 auto;max-width:780px;line-height:1.2;
+  }
+  @media (max-width:640px){
+    .skyline-banner{height:240px}
+    .skyline-banner .skyline-text{padding:28px 0}
+  }
+
+  /* ===== NEIGHBORHOODS ===== */
+  .neighborhoods{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .neighborhoods-grid{
+    display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center;
+  }
+  .neighborhoods-photo{
+    border-radius:16px;overflow:hidden;
+    box-shadow:0 30px 60px -30px rgba(15,30,46,0.35);
+    aspect-ratio:2/3;background:#0F1E2E;
+  }
+  .neighborhoods-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .neighborhoods-body .eyebrow{margin-bottom:14px}
+  .neighborhoods-body h2{font-size:clamp(30px,3.8vw,42px);color:var(--navy);margin-bottom:18px;line-height:1.15}
+  .neighborhoods-body p{color:var(--muted);font-size:17px;line-height:1.7;margin-bottom:18px}
+  .nbh-list{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin:24px 0 28px}
+  .nbh-list .nbh-item{
+    display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink);font-weight:500;
+  }
+  .nbh-list .nbh-item::before{
+    content:"";flex-shrink:0;width:8px;height:8px;border-radius:50%;background:var(--gold);
+  }
+  @media (max-width:900px){
+    .neighborhoods-grid{grid-template-columns:1fr;gap:40px}
+    .neighborhoods-photo{max-width:420px;margin:0 auto;aspect-ratio:2/3}
+  }
+  @media (max-width:640px){
+    .nbh-list{grid-template-columns:1fr;gap:10px}
+  }
+
+  /* ===== PRICING ===== */
+  .pricing{background:var(--bg);border-top:1px solid var(--line)}
+  .pricing-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px;
+  }
+  .price-card{
+    position:relative;border-radius:16px;overflow:hidden;padding:36px 32px;
+    background:#fff;border:1px solid var(--line);
+    transition:all .3s;
+    display:flex;flex-direction:column;
+  }
+  .price-card:hover{transform:translateY(-3px);box-shadow:0 24px 48px -24px rgba(15,30,46,0.18);border-color:var(--gold)}
+  .price-card.featured{
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));
+    color:#fff;border:1px solid var(--navy);
+  }
+  .price-card.featured h3,.price-card.featured .price-big{color:#fff}
+  .price-card.featured .price-row-item{color:rgba(255,255,255,0.85);border-bottom-color:rgba(255,255,255,0.12)}
+  .price-card.featured .price-row-item strong{color:#fff}
+  .price-card .pc-eyebrow{
+    color:var(--gold-2);font-size:11.5px;font-weight:700;letter-spacing:0.12em;
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .price-card.featured .pc-eyebrow{color:var(--gold)}
+  .price-card h3{font-size:22px;color:var(--navy);margin-bottom:18px;line-height:1.2}
+  .price-card .price-rows{margin-bottom:22px}
+  .price-row-item{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:14.5px;
+  }
+  .price-row-item:last-child{border-bottom:none}
+  .price-row-item strong{color:var(--navy);font-weight:600;font-size:15px}
+  .price-card .price-big{
+    font-family:'Fraunces',serif;font-size:30px;color:var(--navy);font-weight:600;
+    line-height:1.1;margin-bottom:8px;
+  }
+  .price-card .price-sub{color:var(--muted);font-size:14px;margin-bottom:18px;line-height:1.5}
+  .price-card .savings-pill{
+    display:inline-block;background:var(--gold);color:#fff;
+    padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700;
+    letter-spacing:0.02em;margin-top:auto;align-self:flex-start;
+  }
+  .price-card .pc-cta{
+    margin-top:auto;display:inline-flex;align-items:center;gap:8px;
+    color:var(--gold-2);font-weight:600;font-size:14px;text-decoration:none;
+    padding-top:14px;
+  }
+  .price-card.featured .pc-cta{color:var(--gold)}
+  .price-card .pc-cta:hover{gap:12px}
+
+  /* Features strip */
+  .feature-strip{
+    background:var(--navy);color:#fff;border-radius:16px;
+    padding:36px 32px;display:grid;
+    grid-template-columns:repeat(4,1fr) auto;gap:28px;align-items:center;
+  }
+  .feature-strip .feat-item{display:flex;align-items:center;gap:14px}
+  .feature-strip .feat-icon{
+    width:44px;height:44px;flex-shrink:0;border-radius:10px;
+    background:rgba(184,146,74,0.15);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .feature-strip .feat-icon svg{width:22px;height:22px}
+  .feature-strip .feat-text .feat-title{
+    font-size:13.5px;font-weight:700;color:#fff;line-height:1.2;
+    text-transform:uppercase;letter-spacing:0.05em;
+  }
+  .feature-strip .feat-divider{
+    width:1px;height:48px;background:rgba(255,255,255,0.15);
+  }
+  .feature-strip .feat-tail{
+    color:#fff;line-height:1.4;padding-left:8px;
+  }
+  .feature-strip .feat-tail .tail-title{
+    font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:2px;
+  }
+  .feature-strip .feat-tail .tail-sub{
+    color:var(--gold);font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;
+  }
+
+  @media (max-width:900px){
+    .pricing-grid{grid-template-columns:1fr}
+    .feature-strip{
+      grid-template-columns:repeat(2,1fr);gap:24px;padding:30px 26px;
+    }
+    .feature-strip .feat-divider{display:none}
+    .feature-strip .feat-tail{
+      grid-column:1 / -1;border-top:1px solid rgba(255,255,255,0.15);
+      padding-top:20px;padding-left:0;text-align:center;
+    }
+  }
+  @media (max-width:640px){
+    .price-card{padding:28px 22px}
+    .price-card h3{font-size:20px}
+    .price-card .price-big{font-size:26px}
+    .feature-strip{grid-template-columns:1fr;gap:18px;padding:26px 22px}
+    .feature-strip .feat-item{justify-content:flex-start}
+    .feature-strip .feat-tail{text-align:left}
+  }
+
+  /* ===== TESTIMONIAL / QUOTE ===== */
+  .quote-section{
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));
+    color:#fff;padding:90px 0;
+  }
+  .quote-section .container{max-width:820px;text-align:center}
+  .quote-section .eyebrow{color:var(--gold);justify-content:center;display:inline-flex}
+  .quote-section blockquote{
+    font-family:'Fraunces',serif;font-size:clamp(24px,3.2vw,34px);
+    line-height:1.4;margin:24px 0 28px;font-weight:400;
+  }
+  .quote-section cite{color:rgba(255,255,255,0.7);font-style:normal;font-size:14px;letter-spacing:0.05em}
+
+  /* ===== CONTACT ===== */
+  .contact{background:var(--bg)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .contact-info h2{font-size:42px;color:var(--navy);margin-bottom:16px;line-height:1.1}
+  .contact-info > p{color:var(--muted);font-size:17px;margin-bottom:36px;max-width:440px}
+  .contact-channels{display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
+  .channel{
+    display:flex;align-items:center;gap:18px;padding:20px 22px;
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    transition:all .25s;
+  }
+  .channel:hover{border-color:var(--gold);transform:translateX(4px)}
+  .channel .icon{
+    width:44px;height:44px;border-radius:10px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;color:#fff;
+  }
+  .channel.call .icon{background:var(--navy)}
+  .channel.email .icon{background:var(--gold)}
+  .channel .icon svg{width:20px;height:20px}
+  .channel .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:600}
+  .channel .value{font-size:17px;color:var(--navy);font-weight:600;font-family:'Fraunces',serif}
+
+  form{background:#fff;padding:36px;border-radius:16px;border:1px solid var(--line)}
+  form h3{font-size:22px;color:var(--navy);margin-bottom:6px}
+  form .form-sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px}
+  .field input,.field select,.field textarea{
+    width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+    font-family:inherit;font-size:16px;background:var(--bg);color:var(--ink);
+    transition:all .2s;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(184,146,74,0.12);
+  }
+  .field textarea{resize:vertical;min-height:100px}
+  form .btn-primary{width:100%;justify-content:center;margin-top:8px}
+  .form-status{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:14px;display:none;line-height:1.5}
+  .form-status.show{display:block}
+  .form-status.success{background:#E8F4EE;color:var(--success);border:1px solid #B8DEC8}
+  .form-status.error{background:#FBEAEA;color:#A82828;border:1px solid #E5B8B8}
+  form button[disabled]{opacity:0.6;cursor:not-allowed}
+  .honey{position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden}
+  .field input:invalid:not(:placeholder-shown),
+  .field input.has-error{border-color:#C8443A;background:#FFF7F6}
+  .field .error-msg{display:none;color:#A82828;font-size:12.5px;margin-top:6px;font-weight:500}
+  .field .error-msg.show{display:block}
+  .conditional-field{
+    animation: slideDown .25s ease;
+    border-left:3px solid var(--gold);padding-left:14px;margin-left:-3px;
+  }
+  @keyframes slideDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  @media (max-width:820px){
+    .contact-grid{grid-template-columns:1fr}
+    form{padding:28px}
+  }
+  @media (max-width:640px){
+    .contact-info h2{font-size:32px}
+    .contact-info > p{font-size:15px;margin-bottom:28px}
+    .channel{padding:16px 18px;gap:14px}
+    .channel .icon{width:38px;height:38px}
+    .channel .value{font-size:15px}
+    form{padding:22px}
+    form h3{font-size:20px}
+    .quote-section{padding:60px 0}
+    .quote-section blockquote{font-size:20px}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:56px 0 28px;font-size:14px}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer h4{color:#fff;font-family:'Inter',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:18px;font-weight:600}
+  footer .brand{font-family:'Fraunces',serif;font-size:24px;color:#fff;margin-bottom:12px;font-weight:600}
+  footer .brand span{color:var(--gold)}
+  footer p{margin-bottom:8px;line-height:1.6}
+  footer a{color:rgba(255,255,255,0.7);transition:color .2s}
+  footer a:hover{color:var(--gold)}
+  footer ul{list-style:none}
+  footer ul li{margin-bottom:10px}
+  .legal{padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:12.5px;color:rgba(255,255,255,0.5)}
+  .fair-housing{font-size:11px;line-height:1.5;margin-top:18px;color:rgba(255,255,255,0.4)}
+  @media (max-width:820px){
+    .footer-grid{grid-template-columns:1fr;gap:28px}
+    .legal{flex-direction:column}
+  }
+
+  /* sticky mobile call button */
+  .mobile-call{
+    display:none;position:fixed;bottom:20px;right:20px;z-index:100;
+    width:60px;height:60px;border-radius:50%;background:var(--navy);color:#fff;
+    align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(15,30,46,0.4);
+    transition:all .3s;
+  }
+  .mobile-call:hover{background:var(--gold);transform:scale(1.05)}
+  .mobile-call svg{width:24px;height:24px}
+  @media (max-width:820px){.mobile-call{display:flex}}
+
+  /* ===== LISTINGS GRID VIEW (Compact Cards) ===== */
+  .listings-grid-view{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-bottom:60px;max-width:900px;margin-left:auto;margin-right:auto}
+  .listing-card-compact{
+    cursor:pointer;border-radius:12px;overflow:hidden;
+    background:var(--card);border:1px solid var(--line);
+    transition:all .3s ease;
+    display:flex;flex-direction:column;height:100%;
+  }
+  .listing-card-compact:hover{
+    box-shadow:0 12px 32px rgba(15,30,46,0.15);
+    transform:translateY(-4px);
+  }
+  .card-image{position:relative;width:100%;height:240px;overflow:hidden;background:#f0f0f0}
+  .card-image img{width:100%;height:100%;object-fit:cover}
+  .card-badge{
+    position:absolute;top:12px;left:12px;
+    background:var(--gold);color:#fff;padding:6px 12px;border-radius:6px;
+    font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;
+  }
+  .card-info{padding:18px;flex:1;display:flex;flex-direction:column}
+  .card-price{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .card-price span{font-size:13px;font-weight:500;color:var(--muted)}
+  .card-title{font-family:'Fraunces',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;line-height:1.3}
+  .card-address{font-size:13px;color:var(--muted);margin-bottom:12px}
+  .card-specs{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:auto}
+  .card-specs span{padding:4px 8px;background:rgba(15,30,46,0.04);border-radius:4px}
+
+  @media (max-width:1024px){.listings-grid-view{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){
+    .listings-grid-view{grid-template-columns:1fr;gap:20px}
+    .card-image{height:200px}
+  }
+
+  /* ===== LISTINGS DETAIL VIEW ===== */
+  .listings-detail-view{position:relative}
+  .detail-top{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:20px 0 30px;border-bottom:1px solid var(--line);margin-bottom:40px;
+  }
+  .detail-back{
+    background:none;border:none;cursor:pointer;
+    font-size:15px;font-weight:600;color:var(--navy);
+    padding:8px 12px;border-radius:6px;
+    transition:all .2s;
+  }
+  .detail-back:hover{background:rgba(15,30,46,0.04);color:var(--gold)}
+  .detail-nav{display:flex;gap:12px}
+  .nav-arrow{
+    width:44px;height:44px;border-radius:50%;
+    border:1.5px solid var(--line);background:var(--card);
+    cursor:pointer;font-size:24px;color:var(--navy);
+    transition:all .2s;display:flex;align-items:center;justify-content:center;
+  }
+  .nav-arrow:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .nav-arrow:disabled{opacity:0.3;cursor:not-allowed}
+
+  @media (max-width:640px){
+    .detail-top{flex-direction:column;gap:16px;align-items:flex-start;padding:16px 0 24px}
+    .detail-nav{align-self:flex-end;width:100%}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="logo">Barak <span>Nissan</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#neighborhoods">Neighborhoods</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#listings">Listings</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+17182883520" class="nav-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 718-288-3520
+      </a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Licensed NY Real Estate Salesperson</div>
+        <h1>Buy, sell, or rent in New York — with someone who treats it like the deal it is.</h1>
+        <p class="lead">15+ years leading multimillion-dollar programs in defense, healthcare, and tech — now applied to helping clients win in New York's fastest-moving rental and sales markets.</p>
+        <div class="cta-row">
+          <a href="tel:+17182883520" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call to Rent, Buy, or List
+          </a>
+          <a href="#contact" class="btn btn-secondary">Send a Message</a>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-item">
+            <span class="num">15+</span>
+            <span class="lbl">Years Executive Experience</span>
+          </div>
+          <div class="trust-item">
+            <span class="num">NY</span>
+            <span class="lbl">Licensed Salesperson</span>
+          </div>
+          <div class="trust-item">
+            <span class="num">FIND</span>
+            <span class="lbl">Real Estate Group</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="frame">
+          <!-- Drop headshot.jpg into the same folder and it'll appear here -->
+          <img src="headshot.jpg" alt="Barak Nissan, Licensed NY Real Estate Salesperson" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="placeholder" style="display:none">BN</div>
+        </div>
+        <div class="badge">
+          <div class="badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.5V5l8-3 8 3v5.5C20 17.5 12 22 12 22z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div class="badge-text">
+            <strong>NY Licensed Salesperson</strong>
+            License #10401396229
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">How I Help</div>
+      <h2>Three ways we can work together</h2>
+      <p>Whether you're searching for your first apartment, ready to sell, or eyeing your next investment — same precision, same advocacy.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Rentals</h3>
+        <p>Cut through New York's chaotic rental market with someone who knows the buildings, the brokers, and the numbers that actually matter.</p>
+      </div>
+      <div class="service">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="18"/></svg>
+        </div>
+        <h3>Sales</h3>
+        <p>Buying or selling, you deserve an analytical, data-driven approach — comps, scenarios, negotiation strategy, no shortcuts.</p>
+      </div>
+      <div class="service">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Investment Properties</h3>
+        <p class="service-tagline">Invest Methodically. Acquire Strategically. Build Generational Value.</p>
+        <p>Cap rates, cash-on-cash, neighborhood trajectory — I underwrite a deal the way I ran multimillion-dollar programs. Methodically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKYLINE BANNER ===== -->
+<section class="skyline-banner" aria-label="New York City skyline">
+  <img src="nyc-skyline.jpg" alt="New York City skyline at sunset" loading="lazy" onerror="this.closest('.skyline-banner').classList.add('no-image');this.remove();" />
+  <div class="container skyline-text">
+    <div class="eyebrow">Manhattan · Brooklyn · Queens · Bronx · Staten Island</div>
+    <h2>This city moves fast. So do I.</h2>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">About Barak</div>
+      <h2>A different background. A sharper edge.</h2>
+    </div>
+    <div class="about-grid">
+      <aside class="about-card">
+        <h3>Barak Nissan</h3>
+        <div class="role">Licensed Real Estate Salesperson, NY</div>
+        <dl>
+          <dt>Licensed as</dt><dd>Barak Nissan</dd>
+          <dt>License #</dt><dd>10401396229</dd>
+          <dt>Brokerage</dt><dd>FIND Real Estate (FIND Group)</dd>
+          <dt>Office</dt><dd>5 W 37th St, 12th Floor<br/>New York, NY 10018</dd>
+        </dl>
+        <div class="divider"></div>
+        <dl>
+          <dt>Direct</dt><dd><a href="tel:+17182883520">718-288-3520</a></dd>
+          <dt>Email</dt><dd><a href="mailto:bnissan@findrealestate.com">bnissan@findrealestate.com</a></dd>
+        </dl>
+      </aside>
+      <div class="about-body">
+        <p>Barak Nissan brings a proven record of executive-level operational leadership to New York real estate. With over 15 years overseeing multimillion-dollar programs across the defense, healthcare, and technology sectors, he applies the same precision, strategic thinking, and integrity that defined his corporate success to every client interaction.</p>
+        <p>Known for his expertise in contract negotiation, project management, and client advocacy, Barak navigates New York's fast-moving rental and sales markets with confidence and clarity. His analytical, data-driven approach ensures clients make informed, winning decisions — whether securing their first apartment or their next investment property.</p>
+        <p>Licensed Real Estate Salesperson in NY, affiliated with FIND Real Estate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE ===== -->
+<section class="quote-section">
+  <div class="container">
+    <div class="eyebrow">My Approach</div>
+    <blockquote>"Every transaction is a negotiation, a project, and a relationship — all at once. I treat yours with the same rigor I brought to multimillion-dollar programs."</blockquote>
+    <cite>— Barak Nissan, Licensed Real Estate Salesperson</cite>
+  </div>
+</section>
+
+<!-- ===== NEIGHBORHOODS ===== -->
+<section class="neighborhoods" id="neighborhoods">
+  <div class="container">
+    <div class="neighborhoods-grid">
+      <div class="neighborhoods-photo">
+        <img src="neighborhoods.jpg" alt="Upper East Side, Central Park, Upper West Side, and Riverside Park" loading="lazy" onerror="this.closest('.neighborhoods-photo').classList.add('no-image');this.remove();" />
+      </div>
+      <div class="neighborhoods-body">
+        <div class="eyebrow">Where I Work</div>
+        <h2>Renting in the UES or UWS?</h2>
+        <p>I focus on Manhattan's Upper East and Upper West Sides — two of the city's most competitive rental markets and the neighborhoods where my network, building relationships, and inventory access matter most.</p>
+        <div class="nbh-list">
+          <div class="nbh-item">Upper East Side</div>
+          <div class="nbh-item">Upper West Side</div>
+          <div class="nbh-item">Central Park-adjacent</div>
+          <div class="nbh-item">Riverside Park</div>
+          <div class="nbh-item">Lincoln Square</div>
+          <div class="nbh-item">Carnegie Hill</div>
+        </div>
+        <p>Available listings update weekly. Tell me your budget and timeline and I'll send what fits — usually within 24 hours.</p>
+        <div style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="tel:+17182883520" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call for Available Listings
+          </a>
+          <a href="#contact" class="btn btn-secondary">Send a Note</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MANHATTAN RENTAL PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Manhattan Rental Pricing</div>
+      <h2>What to expect in today's market</h2>
+      <p>Current rent ranges on the Upper East and Upper West Sides — what you'll actually pay, and where the value plays are. Call for current availability.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- UES -->
+      <div class="price-card">
+        <div class="pc-eyebrow">Upper East Side</div>
+        <h3>UES Rentals</h3>
+        <div class="price-rows">
+          <div class="price-row-item"><span>Studios</span><strong>$2,200 – $2,900</strong></div>
+          <div class="price-row-item"><span>1 Bedrooms</span><strong>$2,900 – $4,200</strong></div>
+          <div class="price-row-item"><span>2 Bedrooms</span><strong>$4,200 – $6,500</strong></div>
+        </div>
+        <a href="tel:+17182883520" class="pc-cta">Call for UES listings →</a>
+      </div>
+
+      <!-- UWS -->
+      <div class="price-card">
+        <div class="pc-eyebrow">Upper West Side</div>
+        <h3>UWS Apartments</h3>
+        <div class="price-rows">
+          <div class="price-row-item"><span>1 Bedrooms</span><strong>$3,200 – $4,800</strong></div>
+          <div class="price-row-item"><span>2 Bedrooms</span><strong>$4,800 – $7,500</strong></div>
+          <div class="price-row-item"><span>Building access</span><strong>Doorman · Pre-war · New</strong></div>
+        </div>
+        <a href="tel:+17182883520" class="pc-cta">Call for UWS details →</a>
+      </div>
+
+      <!-- Save vs Midtown -->
+      <div class="price-card featured">
+        <div class="pc-eyebrow">Save on NYC Rent</div>
+        <h3>UES vs. Midtown</h3>
+        <div class="price-rows">
+          <div class="price-row-item"><span>UES 1BR</span><strong>$3,200/mo</strong></div>
+          <div class="price-row-item"><span>Midtown 1BR</span><strong>$4,300/mo</strong></div>
+        </div>
+        <div class="savings-pill">Over $13K annual savings</div>
+      </div>
+
+      <!-- Roommate split -->
+      <div class="price-card">
+        <div class="pc-eyebrow">Roommate Deals</div>
+        <h3>Split a 2BR on the UWS</h3>
+        <div class="price-big">$6,200 = $3,100 each</div>
+        <p class="price-sub">More space, prime location, and a per-roommate cost that often beats a solo studio. Best deals go fast — message me for the current short list.</p>
+        <a href="#contact" class="pc-cta">Message me →</a>
+      </div>
+    </div>
+
+    <!-- Why rent with Barak (replaces the marketing banner content as a clean strip) -->
+    <div class="feature-strip" aria-label="Why rent with Barak">
+      <div class="feat-item">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="7" x2="9" y2="7"/><line x1="15" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="9" y2="11"/><line x1="15" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="9" y2="15"/><line x1="15" y1="15" x2="15" y2="15"/></svg>
+        </div>
+        <div class="feat-text"><div class="feat-title">Premium<br/>Locations</div></div>
+      </div>
+      <div class="feat-item">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="feat-text"><div class="feat-title">Modern<br/>Living</div></div>
+      </div>
+      <div class="feat-item">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m10.85 12.15 8.4-8.4"/><path d="m18 5 3 3"/><path d="m15 8 3 3"/></svg>
+        </div>
+        <div class="feat-text"><div class="feat-title">Seamless<br/>Renting</div></div>
+      </div>
+      <div class="feat-item">
+        <div class="feat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3v4zM3 19a2 2 0 0 0 2 2h1v-6H3v4z"/></svg>
+        </div>
+        <div class="feat-text"><div class="feat-title">Dedicated<br/>Support</div></div>
+      </div>
+      <div class="feat-divider"></div>
+      <div class="feat-tail">
+        <div class="tail-title">Your New York. Your home.</div>
+        <div class="tail-sub">Studio · 1 Bed · 2 Bed · Luxury · Flexible Terms</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LISTINGS ===== -->
+<section class="listings" id="listings">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Featured Listings</div>
+      <h2>Available in Manhattan & Beyond</h2>
+      <p>Luxury and value across New York's most desirable neighborhoods. Contact me for additional inventory.</p>
+    </div>
+
+    <!-- GRID VIEW: 3-column card layout -->
+    <div class="listings-grid-view" id="gridView">
+      <!-- Card 1: Staten Island -->
+      <div class="listing-card-compact" onclick="showDetailView(0)">
+        <div class="card-image">
+          <img src="staten-island-images/1000034318.jpg" alt="Staten Island 1BR — kitchen" />
+          <span class="card-badge">AVAILABLE JUN 1</span>
+        </div>
+        <div class="card-info">
+          <div class="card-price">$1,500<span>/month</span></div>
+          <div class="card-title">Renovated 1-Bedroom — Private Side Unit</div>
+          <div class="card-address">57 Villanova St, Staten Island, NY 10314</div>
+          <div class="card-specs">
+            <span>1 Bed</span>
+            <span>1 Bath</span>
+            <span>Available Jun 1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: The Max -->
+      <div class="listing-card-compact" onclick="showDetailView(1)">
+        <div class="card-image">
+          <img src="the-max-images/the-max-01.png" alt="The Max" />
+          <span class="card-badge">NOW LEASING</span>
+        </div>
+        <div class="card-info">
+          <div class="card-price">$3,500<span>/month and up</span></div>
+          <div class="card-title">The Max — Elevated Waterfront Living</div>
+          <div class="card-address">606 West 57th Street, New York, NY</div>
+          <div class="card-specs">
+            <span>44 Stories</span>
+            <span>45K+ Sq Ft Amenities</span>
+            <span>Now Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETAIL VIEW: Full property information -->
+    <div class="listings-detail-view" id="detailView" style="display:none;">
+      <div class="detail-top">
+        <button class="detail-back" onclick="showGridView()">← Back to Listings</button>
+        <div class="detail-nav">
+          <button class="nav-arrow prev" onclick="prevProperty()" aria-label="Previous property">‹</button>
+          <button class="nav-arrow next" onclick="nextProperty()" aria-label="Next property">›</button>
+        </div>
+      </div>
+
+      <!-- Property 0: Staten Island (Detail) -->
+      <article class="listing-card" id="listing-staten-island" data-property-index="0">
+        <div class="listing-top">
+        <div class="gallery">
+          <div class="gallery-main" id="gallery">
+            <img class="active" src="staten-island-images/1000034318.jpg" alt="Staten Island 1BR — kitchen with full cabinetry, gas range, and refrigerator" />
+            <img src="staten-island-images/1000034319.jpg" alt="Staten Island 1BR — living and dining area with wood floors" />
+            <img src="staten-island-images/1000034317.jpg" alt="Staten Island 1BR — kitchen hallway with refrigerator and closet" />
+            <img src="staten-island-images/1000034316.jpg" alt="Staten Island 1BR — bedroom with tile floor and window" />
+            <img src="staten-island-images/1000034315.jpg" alt="Staten Island 1BR — full bathroom with tub and shower" />
+            <img src="staten-island-images/1000034338.jpg" alt="Staten Island 1BR — vanity and mirror" />
+            <img src="staten-island-images/1000034314.jpg" alt="Staten Island 1BR — interior hallway" />
+            <img src="staten-island-images/1000034333.jpg" alt="Staten Island 1BR — linen closet with shelves" />
+            <img src="staten-island-images/1000034332.jpg" alt="Staten Island 1BR — bedroom closet" />
+            <img src="staten-island-images/1000034334.jpg" alt="Staten Island 1BR — storage closet" />
+            <span class="gallery-status">Available Jun 1</span>
+            <button class="gallery-nav prev" onclick="navGallery(-1)" aria-label="Previous photo">‹</button>
+            <button class="gallery-nav next" onclick="navGallery(1)" aria-label="Next photo">›</button>
+            <span class="gallery-counter" id="galleryCounter">1 / 10</span>
+          </div>
+          <div class="thumbs" id="thumbs">
+            <div class="thumb active" onclick="setSlide(0)"><img src="staten-island-images/1000034318.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(1)"><img src="staten-island-images/1000034319.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(2)"><img src="staten-island-images/1000034317.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(3)"><img src="staten-island-images/1000034316.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(4)"><img src="staten-island-images/1000034315.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(5)"><img src="staten-island-images/1000034338.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(6)"><img src="staten-island-images/1000034314.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(7)"><img src="staten-island-images/1000034333.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(8)"><img src="staten-island-images/1000034332.jpg" alt="" /></div>
+            <div class="thumb" onclick="setSlide(9)"><img src="staten-island-images/1000034334.jpg" alt="" /></div>
+          </div>
+        </div>
+
+        <div class="listing-info">
+          <div class="price-row">
+            <span class="price">$1,500</span>
+            <span class="price-period">/ month · single occupancy</span>
+          </div>
+          <div class="second-price">$1,600 / month for two occupants · Heat &amp; electric included</div>
+          <h3>Renovated 1-Bedroom — Private Side Unit</h3>
+          <a class="neighborhood map-link" href="https://www.google.com/maps/search/?api=1&amp;query=57+Villanova+St%2C+Staten+Island%2C+NY+10314" target="_blank" rel="noopener" aria-label="Open 57 Villanova St in Google Maps">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>57 Villanova St, Staten Island, NY 10314</span>
+            <svg class="ext" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <div class="specs-row">
+            <div class="spec-box"><div class="v">1</div><div class="l">Bedroom</div></div>
+            <div class="spec-box"><div class="v">1</div><div class="l">Bath</div></div>
+            <div class="spec-box"><div class="v">Jun 1</div><div class="l">Available</div></div>
+          </div>
+          <p class="desc">Renovated 1-bedroom apartment in a quiet residential pocket of Staten Island, minutes from the Staten Island Mall. Private side entrance, bright living space with natural light, and a clean, well-maintained interior — ideal for a single occupant or a couple.</p>
+          <div class="listing-cta-row">
+            <a href="tel:+17182883520" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Schedule a Tour
+            </a>
+            <a href="mailto:bnissan@findrealestate.com?subject=Staten%20Island%201BR%20at%2057%20Villanova%20St" class="btn btn-secondary">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="listing-detail">
+        <div class="detail-grid">
+          <div class="detail-col">
+            <h4>Apartment Features</h4>
+            <ul>
+              <li>Renovated 1-bedroom layout</li>
+              <li>Private entrance</li>
+              <li>Bright living space, natural light</li>
+              <li>Clean, well-kept interior</li>
+              <li>Quiet residential setting</li>
+              <li>Street parking available</li>
+              <li>Heat &amp; electric included</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Location Highlights</h4>
+            <ul>
+              <li>Minutes to Staten Island Mall</li>
+              <li>Shopping, restaurants, supermarkets nearby</li>
+              <li>Easy access to major highways</li>
+              <li>Convenient public transportation</li>
+              <li>Quiet residential block</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Lease &amp; Move-In</h4>
+            <ul>
+              <li>First month rent</li>
+              <li>One month security deposit</li>
+              <li>One month broker fee</li>
+              <li>Annual rent increase: 3%</li>
+              <li>A/C optional: +$100/mo (May–Sept)</li>
+              <li>No pets · No smoking</li>
+              <li>Good credit &amp; verifiable income required</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- LISTING 2: THE MAX -->
+    <article class="listing-card" id="listing-the-max">
+      <div class="listing-top">
+        <div class="gallery">
+          <div class="gallery-main" id="gallery-max">
+            <img class="active" src="the-max-images/the-max-01.png" alt="The Max — exterior view" />
+            <img src="the-max-images/the-max-02.png" alt="The Max — amenities" />
+            <img src="the-max-images/the-max-03.png" alt="The Max — unit interior" />
+            <img src="the-max-images/the-max-04.png" alt="The Max — living space" />
+            <img src="the-max-images/the-max-05.png" alt="The Max — bedroom" />
+            <img src="the-max-images/the-max-06.png" alt="The Max — kitchen" />
+            <img src="the-max-images/the-max-07.png" alt="The Max — bathroom" />
+            <img src="the-max-images/the-max-08.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-09.png" alt="The Max — view" />
+            <img src="the-max-images/the-max-10.png" alt="The Max — amenity" />
+            <img src="the-max-images/the-max-11.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-12.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-13.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-14.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-15.png" alt="The Max — details" />
+            <span class="gallery-status">Now Leasing</span>
+            <button class="gallery-nav prev" onclick="navGalleryMax(-1)" aria-label="Previous photo">‹</button>
+            <button class="gallery-nav next" onclick="navGalleryMax(1)" aria-label="Next photo">›</button>
+            <span class="gallery-counter" id="galleryCounterMax">1 / 15</span>
+          </div>
+          <div class="thumbs" id="thumbs-max">
+            <div class="thumb active" onclick="setSlideMax(0)"><img src="the-max-images/the-max-01.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(1)"><img src="the-max-images/the-max-02.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(2)"><img src="the-max-images/the-max-03.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(3)"><img src="the-max-images/the-max-04.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(4)"><img src="the-max-images/the-max-05.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(5)"><img src="the-max-images/the-max-06.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(6)"><img src="the-max-images/the-max-07.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(7)"><img src="the-max-images/the-max-08.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(8)"><img src="the-max-images/the-max-09.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(9)"><img src="the-max-images/the-max-10.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(10)"><img src="the-max-images/the-max-11.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(11)"><img src="the-max-images/the-max-12.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(12)"><img src="the-max-images/the-max-13.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(13)"><img src="the-max-images/the-max-14.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(14)"><img src="the-max-images/the-max-15.png" alt="" /></div>
+          </div>
+        </div>
+
+        <div class="listing-info">
+          <div class="price-row">
+            <span class="price">$3,500</span>
+            <span class="price-period">/ month and up</span>
+          </div>
+          <div class="second-price">Studios to 3-bedrooms · Deposit-free renting available</div>
+          <h3>The Max — Elevated Waterfront Living</h3>
+          <a class="neighborhood map-link" href="https://www.google.com/maps/search/?api=1&amp;query=606+West+57th+Street%2C+Manhattan%2C+NY" target="_blank" rel="noopener" aria-label="Open 606 West 57th St in Google Maps">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>606 West 57th Street, New York, NY</span>
+            <svg class="ext" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <div class="specs-row">
+            <div class="spec-box"><div class="v">44</div><div class="l">Stories</div></div>
+            <div class="spec-box"><div class="v">45K+</div><div class="l">Sq Ft Amenities</div></div>
+            <div class="spec-box"><div class="v">Now</div><div class="l">Available</div></div>
+          </div>
+          <p class="desc">Rising 44 stories above Manhattan's waterfront, The Max offers elevated luxury living with sweeping views of the Hudson River and skyline. Thoughtfully designed for modern living with studio, 1-, 2-, and 3-bedroom residences featuring floor-to-ceiling windows and premium finishes.</p>
+          <div class="listing-cta-row">
+            <a href="tel:+17182883520" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Schedule a Tour
+            </a>
+            <a href="mailto:bnissan@findrealestate.com?subject=The%20Max%20-%20606%20West%2057th%20Street" class="btn btn-secondary">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="listing-detail">
+        <div class="detail-grid">
+          <div class="detail-col">
+            <h4>Apartment Features</h4>
+            <ul>
+              <li>Floor-to-ceiling windows</li>
+              <li>Private terraces (select units)</li>
+              <li>In-unit washer/dryer</li>
+              <li>Walk-in closets</li>
+              <li>High ceilings</li>
+              <li>Home office layouts</li>
+              <li>Spacious open kitchens</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Building Amenities</h4>
+            <ul>
+              <li>Full-court basketball gymnasium</li>
+              <li>State-of-the-art fitness center</li>
+              <li>Peloton bikes & yoga studio</li>
+              <li>Outdoor sundeck with BBQ grills</li>
+              <li>Landscaped garden & dining areas</li>
+              <li>Resident lounges & screening room</li>
+              <li>Co-working spaces & art gallery</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Lease &amp; Move-In</h4>
+            <ul>
+              <li>Deposit-free renting available</li>
+              <li>TheGuarantors approved program</li>
+              <li>Multiple unit configurations</li>
+              <li>Incentives on select residences</li>
+              <li>Stunning river &amp; skyline views</li>
+              <li>Premium Midtown West location</li>
+              <li>Exceptional service &amp; concierge</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+      <!-- Property 1: The Max (Detail) -->
+      <article class="listing-card" id="listing-the-max" data-property-index="1" style="display:none;">
+        <div class="listing-top">
+        <div class="gallery">
+          <div class="gallery-main" id="gallery-max">
+            <img class="active" src="the-max-images/the-max-01.png" alt="The Max — exterior view" />
+            <img src="the-max-images/the-max-02.png" alt="The Max — amenities" />
+            <img src="the-max-images/the-max-03.png" alt="The Max — unit interior" />
+            <img src="the-max-images/the-max-04.png" alt="The Max — living space" />
+            <img src="the-max-images/the-max-05.png" alt="The Max — bedroom" />
+            <img src="the-max-images/the-max-06.png" alt="The Max — kitchen" />
+            <img src="the-max-images/the-max-07.png" alt="The Max — bathroom" />
+            <img src="the-max-images/the-max-08.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-09.png" alt="The Max — view" />
+            <img src="the-max-images/the-max-10.png" alt="The Max — amenity" />
+            <img src="the-max-images/the-max-11.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-12.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-13.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-14.png" alt="The Max — details" />
+            <img src="the-max-images/the-max-15.png" alt="The Max — details" />
+            <span class="gallery-status">Now Leasing</span>
+            <button class="gallery-nav prev" onclick="navGalleryMax(-1)" aria-label="Previous photo">‹</button>
+            <button class="gallery-nav next" onclick="navGalleryMax(1)" aria-label="Next photo">›</button>
+            <span class="gallery-counter" id="galleryCounterMax">1 / 15</span>
+          </div>
+          <div class="thumbs" id="thumbs-max">
+            <div class="thumb active" onclick="setSlideMax(0)"><img src="the-max-images/the-max-01.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(1)"><img src="the-max-images/the-max-02.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(2)"><img src="the-max-images/the-max-03.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(3)"><img src="the-max-images/the-max-04.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(4)"><img src="the-max-images/the-max-05.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(5)"><img src="the-max-images/the-max-06.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(6)"><img src="the-max-images/the-max-07.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(7)"><img src="the-max-images/the-max-08.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(8)"><img src="the-max-images/the-max-09.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(9)"><img src="the-max-images/the-max-10.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(10)"><img src="the-max-images/the-max-11.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(11)"><img src="the-max-images/the-max-12.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(12)"><img src="the-max-images/the-max-13.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(13)"><img src="the-max-images/the-max-14.png" alt="" /></div>
+            <div class="thumb" onclick="setSlideMax(14)"><img src="the-max-images/the-max-15.png" alt="" /></div>
+          </div>
+        </div>
+
+        <div class="listing-info">
+          <div class="price-row">
+            <span class="price">$3,500</span>
+            <span class="price-period">/ month and up</span>
+          </div>
+          <div class="second-price">Studios to 3-bedrooms · Deposit-free renting available</div>
+          <h3>The Max — Elevated Waterfront Living</h3>
+          <a class="neighborhood map-link" href="https://www.google.com/maps/search/?api=1&amp;query=606+West+57th+Street%2C+Manhattan%2C+NY" target="_blank" rel="noopener" aria-label="Open 606 West 57th St in Google Maps">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>606 West 57th Street, New York, NY</span>
+            <svg class="ext" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <div class="specs-row">
+            <div class="spec-box"><div class="v">44</div><div class="l">Stories</div></div>
+            <div class="spec-box"><div class="v">45K+</div><div class="l">Sq Ft Amenities</div></div>
+            <div class="spec-box"><div class="v">Now</div><div class="l">Available</div></div>
+          </div>
+          <p class="desc">Rising 44 stories above Manhattan's waterfront, The Max offers elevated luxury living with sweeping views of the Hudson River and skyline. Thoughtfully designed for modern living with studio, 1-, 2-, and 3-bedroom residences featuring floor-to-ceiling windows and premium finishes.</p>
+          <div class="listing-cta-row">
+            <a href="tel:+17182883520" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Schedule a Tour
+            </a>
+            <a href="mailto:bnissan@findrealestate.com?subject=The%20Max%20-%20606%20West%2057th%20Street" class="btn btn-secondary">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="listing-detail">
+        <div class="detail-grid">
+          <div class="detail-col">
+            <h4>Apartment Features</h4>
+            <ul>
+              <li>Floor-to-ceiling windows</li>
+              <li>Private terraces (select units)</li>
+              <li>In-unit washer/dryer</li>
+              <li>Walk-in closets</li>
+              <li>High ceilings</li>
+              <li>Home office layouts</li>
+              <li>Spacious open kitchens</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Building Amenities</h4>
+            <ul>
+              <li>Full-court basketball gymnasium</li>
+              <li>State-of-the-art fitness center</li>
+              <li>Peloton bikes & yoga studio</li>
+              <li>Outdoor sundeck with BBQ grills</li>
+              <li>Landscaped garden & dining areas</li>
+              <li>Resident lounges & screening room</li>
+              <li>Co-working spaces & art gallery</li>
+            </ul>
+          </div>
+          <div class="detail-col">
+            <h4>Lease &amp; Move-In</h4>
+            <ul>
+              <li>Deposit-free renting available</li>
+              <li>TheGuarantors approved program</li>
+              <li>Multiple unit configurations</li>
+              <li>Incentives on select residences</li>
+              <li>Stunning river &amp; skyline views</li>
+              <li>Premium Midtown West location</li>
+              <li>Exceptional service &amp; concierge</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    </div><!-- end listings-detail-view -->
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Let's talk.</h2>
+        <p>A quick call is the fastest way to know if we're a fit. No pressure, no scripts — just a straightforward conversation about what you're looking for.</p>
+        <div class="contact-channels">
+          <a href="tel:+17182883520" class="channel call">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="label">Call Direct</div>
+              <div class="value">718-288-3520</div>
+            </div>
+          </a>
+          <a href="mailto:bnissan@findrealestate.com" class="channel email">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="label">Email</div>
+              <div class="value">bnissan@findrealestate.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Submissions go to Barak's Formspree inbox (form ID: xaqkaqlw) -->
+      <form id="contactForm" action="https://formspree.io/f/xaqkaqlw" method="POST">
+        <h3>Rent, buy, or list — let's talk</h3>
+        <p class="form-sub">Tell me a bit about what you're looking for and I'll be in touch within 24 hours.</p>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required
+            placeholder="Your name"
+            autocomplete="name"
+            minlength="2"
+            maxlength="80"
+            pattern="^\s*[A-Za-z][A-Za-zÀ-ɏ'\-\.\s]{1,}\s*$"
+            title="Please enter your full name (letters only)." />
+          <div class="error-msg" data-for="name">Please enter your full name.</div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required
+            placeholder="(555) 123-4567"
+            autocomplete="tel"
+            inputmode="tel"
+            maxlength="25"
+            pattern="^[\+\(\)\-\.\s\d]{10,25}$"
+            title="Please enter a valid phone number (at least 10 digits)." />
+          <div class="error-msg" data-for="phone">Please enter a valid phone number with at least 10 digits.</div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required
+            placeholder="you@example.com"
+            autocomplete="email"
+            maxlength="120"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+            title="Please enter a valid email address." />
+          <div class="error-msg" data-for="email">Please enter a valid email address.</div>
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Renting</option>
+            <option>Buying</option>
+            <option>Selling</option>
+            <option>Just exploring</option>
+          </select>
+        </div>
+
+        <!-- Shown only when the interest is Renting or Buying -->
+        <div class="field conditional-field" id="listingField" hidden>
+          <label for="listingChoice">Which listing?</label>
+          <select id="listingChoice" name="listing_choice">
+            <option value="">— Select —</option>
+            <option value="Staten Island 1BR — $1,500/mo">Staten Island 1BR — $1,500/mo</option>
+            <option value="The Max — Midtown West from $3,500/mo">The Max — Midtown West from $3,500/mo</option>
+            <option value="Show me what's available">Show me what's available</option>
+            <option value="Something specific (described below)">Something specific (I'll describe below)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Anything else?</label>
+          <textarea id="message" name="message" placeholder="Neighborhood, budget, timing — whatever helps."></textarea>
+        </div>
+        <!-- Honeypot: bots fill this; real users never see it -->
+        <div class="honey" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+        </div>
+        <input type="hidden" name="_subject" value="New website inquiry — rent, buy, or list" />
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Barak <span>Nissan</span></div>
+        <p>Licensed Real Estate Salesperson</p>
+        <p>FIND Real Estate · License #10401396229</p>
+        <p style="margin-top:14px"><a href="tel:+17182883520">718-288-3520</a> · <a href="mailto:bnissan@findrealestate.com">bnissan@findrealestate.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brokerage</h4>
+        <ul>
+          <li>FIND Real Estate</li>
+          <li>5 W 37th St, 12th Floor</li>
+          <li>New York, NY 10018</li>
+          <li><a href="https://findrealestate.com" target="_blank" rel="noopener">findrealestate.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© <span id="year"></span> Barak Nissan. All rights reserved.</div>
+      <div>Housing Choice Vouchers Welcome · Se Aceptan Vales de Elección de Vivienda</div>
+    </div>
+    <div class="fair-housing">Equal Housing Opportunity. Barak Nissan is a Licensed Real Estate Salesperson in the State of New York, affiliated with FIND Real Estate. All information deemed reliable but not guaranteed and should be independently verified.</div>
+  </div>
+</footer>
+
+<a href="tel:+17182883520" class="mobile-call" aria-label="Call Barak">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ===== LISTING VIEW MANAGEMENT =====
+  let currentPropertyIndex = 0;
+  const properties = [
+    { id: 'listing-staten-island', name: 'Staten Island' },
+    { id: 'listing-the-max', name: 'The Max' }
+  ];
+
+  function showGridView(){
+    document.getElementById('gridView').style.display = 'grid';
+    document.getElementById('detailView').style.display = 'none';
+    window.scrollTo({top: document.getElementById('listings').offsetTop, behavior: 'smooth'});
+  }
+
+  function showDetailView(index){
+    currentPropertyIndex = index;
+    document.getElementById('gridView').style.display = 'none';
+    document.getElementById('detailView').style.display = 'block';
+    updateDetailView();
+    window.scrollTo({top: document.getElementById('listings').offsetTop, behavior: 'smooth'});
+  }
+
+  function nextProperty(){
+    currentPropertyIndex = (currentPropertyIndex + 1) % properties.length;
+    updateDetailView();
+  }
+
+  function prevProperty(){
+    currentPropertyIndex = (currentPropertyIndex - 1 + properties.length) % properties.length;
+    updateDetailView();
+  }
+
+  function updateDetailView(){
+    // Hide all property articles
+    properties.forEach((prop, idx) => {
+      const el = document.getElementById(prop.id);
+      if(el) el.style.display = idx === currentPropertyIndex ? 'block' : 'none';
+    });
+    // Update navigation buttons
+    document.querySelectorAll('.nav-arrow.prev, .nav-arrow.next').forEach(btn => btn.disabled = false);
+  }
+
+  // Initialize detail view as hidden
+  updateDetailView();
+
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  function setMenu(open){
+    navLinks.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+  }
+  menuBtn.addEventListener('click', (e) => { e.stopPropagation(); setMenu(!navLinks.classList.contains('open')); });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && e.target !== menuBtn) setMenu(false);
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+
+  // Gallery 1: Staten Island
+  let slideIdx = 0;
+  const slides = document.querySelectorAll('#gallery img');
+  const thumbs = document.querySelectorAll('#thumbs .thumb');
+  const counter = document.getElementById('galleryCounter');
+  function setSlide(i){
+    slideIdx = (i + slides.length) % slides.length;
+    slides.forEach((s,k)=>s.classList.toggle('active', k===slideIdx));
+    thumbs.forEach((t,k)=>t.classList.toggle('active', k===slideIdx));
+    if(counter) counter.textContent = `${slideIdx+1} / ${slides.length}`;
+    const active = thumbs[slideIdx];
+    if(active) active.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  }
+  function navGallery(dir){ setSlide(slideIdx + dir); }
+
+  // Gallery 2: The Max
+  let slideIdxMax = 0;
+  const slidesMax = document.querySelectorAll('#gallery-max img');
+  const thumbsMax = document.querySelectorAll('#thumbs-max .thumb');
+  const counterMax = document.getElementById('galleryCounterMax');
+  function setSlideMax(i){
+    slideIdxMax = (i + slidesMax.length) % slidesMax.length;
+    slidesMax.forEach((s,k)=>s.classList.toggle('active', k===slideIdxMax));
+    thumbsMax.forEach((t,k)=>t.classList.toggle('active', k===slideIdxMax));
+    if(counterMax) counterMax.textContent = `${slideIdxMax+1} / ${slidesMax.length}`;
+    const active = thumbsMax[slideIdxMax];
+    if(active) active.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  }
+  function navGalleryMax(dir){ setSlideMax(slideIdxMax + dir); }
+
+  document.addEventListener('keydown',(e)=>{
+    if(e.key==='ArrowLeft') navGallery(-1);
+    if(e.key==='ArrowRight') navGallery(1);
+  });
+
+  // Field-level validation helpers
+  const form = document.getElementById('contactForm');
+  function showFieldError(input, message){
+    input.classList.add('has-error');
+    const msg = form.querySelector('.error-msg[data-for="' + input.name + '"]');
+    if (msg) {
+      if (message) msg.textContent = message;
+      msg.classList.add('show');
+    }
+  }
+  function clearFieldError(input){
+    input.classList.remove('has-error');
+    const msg = form.querySelector('.error-msg[data-for="' + input.name + '"]');
+    if (msg) msg.classList.remove('show');
+  }
+  function validateField(input){
+    const v = (input.value || '').trim();
+    if (input.name === 'name') {
+      if (v.length < 2) { showFieldError(input, 'Please enter your full name.'); return false; }
+      if (!/[A-Za-zÀ-ɏ]/.test(v)) { showFieldError(input, 'Name should contain letters.'); return false; }
+    }
+    if (input.name === 'phone') {
+      const digits = v.replace(/\D/g, '');
+      if (digits.length < 10) { showFieldError(input, 'Please enter at least 10 digits.'); return false; }
+      if (digits.length > 15) { showFieldError(input, 'That phone number looks too long.'); return false; }
+    }
+    if (input.name === 'email') {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) {
+        showFieldError(input, 'Please enter a valid email address.'); return false;
+      }
+    }
+    clearFieldError(input);
+    return true;
+  }
+  if (form) {
+    // Live validation: clear errors as user fixes them, validate on blur
+    ['name','phone','email'].forEach(function(n){
+      const input = form.elements[n];
+      if (!input) return;
+      input.addEventListener('blur', () => validateField(input));
+      input.addEventListener('input', () => { if (input.classList.contains('has-error')) clearFieldError(input); });
+    });
+
+    // Conditional sub-field: show "Which listing?" only for Renting or Buying.
+    const interestEl = form.elements['interest'];
+    const listingField = document.getElementById('listingField');
+    const listingChoice = form.elements['listing_choice'];
+    const trigger = ['Renting','Buying'];
+    function syncConditional(){
+      if (!interestEl || !listingField) return;
+      const show = trigger.indexOf(interestEl.value) !== -1;
+      listingField.hidden = !show;
+      // Clear the value when hiding so it doesn't get sent stale
+      if (!show && listingChoice) listingChoice.value = '';
+    }
+    if (interestEl) {
+      interestEl.addEventListener('change', syncConditional);
+      syncConditional(); // run on load (default = Renting → field visible)
+    }
+  }
+
+  // Real form submission via Formspree (or any service that accepts FormData POST + JSON response).
+  // Falls back to a clear error + phone number if the network or backend fails.
+  if (form) {
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      const btn = document.getElementById('submitBtn');
+      const originalBtnText = btn.textContent;
+
+      // Honeypot: bots fill the hidden field, humans don't
+      if (form._gotcha && form._gotcha.value) return;
+
+      // Validate all required fields up front
+      const fields = ['name','phone','email'];
+      let firstBad = null;
+      fields.forEach(function(n){
+        const input = form.elements[n];
+        if (input && !validateField(input)) { if (!firstBad) firstBad = input; }
+      });
+      if (firstBad) {
+        firstBad.focus();
+        status.textContent = "Please fix the highlighted fields above.";
+        status.className = 'form-status show error';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.className = 'form-status';
+      status.textContent = '';
+
+      // Formspree: POST FormData with Accept: application/json
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          status.textContent = "Thanks — your message is in. Barak will reach out within 24 hours. For anything urgent, call 718-288-3520.";
+          status.className = 'form-status show success';
+          form.reset();
+        } else {
+          const data = await response.json().catch(() => ({}));
+          const msg = data && data.errors && data.errors.length
+            ? data.errors.map(x => x.message).join(', ')
+            : 'Submission failed (' + response.status + ')';
+          throw new Error(msg);
+        }
+      } catch (err) {
+        status.textContent = "Couldn't send the message. Please call 718-288-3520 or email bnissan@findrealestate.com directly.";
+        status.className = 'form-status show error';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = originalBtnText;
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
